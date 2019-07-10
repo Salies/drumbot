@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Drumbot</title>
+        <style>
+            body {
+                background: #1a1a1a;
+                color: #fff;
+            }
+        
+            .drumkit button:active,
+            .bg1 {
+                background: #ff3030;
+            }
+        </style>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/async/3.1.0/async.min.js"></script>
+    </head>
+    <body>
+        <div class="drumkit">
+            <button class="hihat">HI-HAT</button>
+            <button class="crash">CRASH</button>
+            <button class="kick">KICK</button>
+            <button class="ride">RIDE</button>
+            <button class="snare">SNARE</button>
+            <button class="tom">TOM</button>
+            <button class="cowbell">COWBELL</button>
+            <button class="clap">CLAP</button>
+            <button class="rim">RIM</button>
+        </div>
+
+        <input type="radio" id="oontza" name="drums" value="oontza" checked><label for="oontza">Oontza</label>
+        <input type="radio" id="bossanoopa" name="drums" value="bossanoopa"><label for="bossanoopa">Bossanoopa</label>
+        <input type="radio" id="nipnop" name="drums" value="nipnop"><label for="nipnop">Nipnop</label>
+        <input type="radio" id="botthisway" name="drums" value="botthisway"><label for="botthisway">Botthisway</label>
+        <input type="radio" id="funkee" name="drums" value="funkee"><label for="funkee">Funkee</label>
+        <input type="radio" id="shlojam" name="drums" value="shlojam"><label for="shlojam">Shlojam</label>
+        <input type="radio" id="botorik" name="drums" value="botorik"><label for="botorik">Botorik</label>
+        <input type="radio" id="swoop" name="drums" value="swoop"><label for="swoop">Swoop</label>
+        <input type="radio" id="schmaltz" name="drums" value="schmaltz"><label for="schmaltz">Schmaltz</label>
+        <input type="radio" id="bouncy" name="drums" value="bouncy"><label for="bouncy">Bouncy</label>
+
+        <button class="playRythm">Play</button>
+        <button class="stopRythm">Stop</button>
+
+        <br><br>
+        To play:<br>
+        A/S => KICK<br>
+        U/I => HI-HAT<br>
+        O/P => SNARE<br>
+        BACKSPACE => CRASH<br>
+        K/L => RIDE<br>
+        M/N => TOM<br>
+        1 => COWBELL<br>
+        2 => CLAP<br>
+        3 => RIM
+
+        <script src="drumbot.js"></script>
+    </body>
+</html>
+
+<!--TODO (but won't actually do) - Preload sounds-->
